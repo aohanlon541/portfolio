@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+.foo,
+#smallScreen {
+    padding: 100px;
+    height: 90vh;
+}
+
+#introSmaller {
+    display: none
+}
+
+div.foo {
+    color: white;
+}
+
+#aLetter {
+    position: absolute;
+    top: 0;
+    left: .1em;
+    font-size: 30em;
+    font-family: 'Prata', serif;
+}
+
+#oLetter {
+    position: absolute;
+    top: .25em;
+    left: 1.1em;
+    font-size: 30em;
+    font-family: 'Prata', serif;
+}
+
+#intro,
+#introSmaller {
+    height: 100vh;
+}
+
+#headerName {
+    position: absolute;
+    top: 2em;
+    right: 5em;
+    font-size: 2em;
+    font-family: avenir;
+    text-align: center;
+}
+
+#AO {
+    font-size: 20em;
+    font-family: 'Prata', serif;
+    position: relative;
+    letter-spacing: .1em;
+}
+
+#smallerTitle {
+    position: relative;
+    font-family: avenir;
+    text-align: center;
+    font-size: 2em;
+}
+
+#aboutMe {
+    background-color: rgb(253, 239, 238);
+    margin: 0 5em;
+    padding: 100px;
+}
+
+#aboutMeText {
+    color: black;
+    /*padding: 100px*/
+    font-family: avenir;
+}
+
+#aboutMeText h2 {
+    font-size: 9em
+}
+
+#aboutMeText p {
+    font-size: 1.25em;
+    padding-bottom: .5em;
+    line-height: 1.5em;
+}
+
+#aboutMeText h3 {
+    font-size: 1.5em;
+    padding: .5em;
+    font-weight: bold;
+}
+
+.icon {
+    width: 50px;
+    padding-top: .25em
+}
+
+#projects {
+    padding: 1em;
+    margin: 1em;
+    height: 100vh;
+    font-family: avenir;
+    color: black;
+}
+
+.box {
+    background-color: darkgrey;
+    height: 175px;
+    margin: 1em;
+    float: left;
+    text-align: center;
+}
+
+.short {
+    width: 25rem;
+}
+
+.long {
+    width: 35rem;
+}
+
+.box p {
+    position: relative;
+    margin: 0 auto;
+    top: 40%;
+    font-size: 1.5em;
+    width: 50%;
+    color: white;
+}
+
+.box:hover {
+    opacity: .75;
+}
+
+#projects h2 {
+    font-size: 4em;
+    font-family: avenir;
+    padding: .75em;
+    color: #000;
+}
+
+#travelBuddy {
+    background-image: url(http://1.bp.blogspot.com/-jiGD-i2wfKA/TZTz8XeW84I/AAAAAAAAAl0/R4Ah3wXFbZ8/s1600/tumblr_lildjsl06D1qdkwieo1_500_large.jpg);
+    background-size: cover;
+    background-color: darkgrey;
+}
+
+#tweet {
+    background-image: url(http://www.publicdomainpictures.net/pictures/170000/velka/united-states-of-america-flag-14629034749fa.jpg);
+    background-size: cover;
+    background-color: darkgrey;
+}
+
+#store {
+    background-image: url(https://www.peepso.com/wp-content/uploads/2015/10/code.jpg);
+    background-size: cover;
+    background-color: darkgrey;
+}
+
+#burger {
+    background-image: url(http://aht.seriouseats.com/images/20110622-pennys-diner-burger-closeup.jpg);
+    background-size: cover;
+    background-color: darkgrey;
+}
+
+#flash {
+    background-image: url(https://static.theworks.co.uk/images/5014108161995_Z.jpg);
+    background-size: cover;
+    background-color: darkgrey;
+}
+
+#contact,
+#smallScreen {
+    height: 100vh;
+    padding: 100px;
+    margin-bottom: 50px;
+}
+
+#contact h2 {
+    font-family: 'Prata', serif;
+    font-size: 7.5em;
+}
+
+#smallScreen h2 {
+    font-size: 5em;
+}
+
+#contact a,
+p {
+    font-family: avenir;
+}
+
+#contact a,
+#smallScreen a {
+    color: #FFF;
+    text-decoration: none;
+    word-spacing: 10px;
+    font-size: 1.5em;
+    line-height: 65px;
+}
+
+#contact a:hover {
+    opacity: .75;
+}
+
+#smallScreen {
+    display: none;
+}
+
+#contact p {
+    font-size: 2em;
+}
+
+@media (max-width: 900px) {
+    #projects,
+    #contact {
+        padding-top: 200px;
+    }
+}
+
+@media (min-width: 900px) {
+    #innerContactBox {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    #projects,
+    #contact {
+        padding-top: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    #projects {
+        padding-top: 350px;
+        text-align: center;
+    }
+    #contact {
+        font-size: 1em;
+    }
+    .box {
+        width: 100%;
+    }
+    #contact,
+    #intro {
+        display: none;
+    }
+    #smallScreen {
+        display: inline-block;
+        background-color: rgb(98, 203, 213);
+        font-family: avenir;
+        color: #fff;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    #introSmaller {
+        display: inline-block;
+        text-align: center;
+        width: 100%
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 7em;
+    }
+    #projects {
+        padding-top: 500px;
+    }
+}
