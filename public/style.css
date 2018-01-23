@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+
 .foo,
 #smallScreen {
     padding: 100px;
@@ -42,7 +49,7 @@ div.foo {
     top: 2em;
     right: 5em;
     font-size: 2em;
-    font-family: avenir;
+    font-family: 'Open Sans', sans-serif;;
     text-align: center;
 }
 
@@ -55,7 +62,7 @@ div.foo {
 
 #smallerTitle {
     position: relative;
-    font-family: avenir;
+    font-family: 'Open Sans', sans-serif;;
     text-align: center;
     font-size: 2em;
 }
@@ -69,7 +76,7 @@ div.foo {
 #aboutMeText {
     color: black;
     /*padding: 100px*/
-    font-family: avenir;
+    font-family: 'Open Sans', sans-serif;;
 }
 
 #aboutMeText h2 {
@@ -95,44 +102,57 @@ div.foo {
 
 #projects {
     padding: 1em;
-    margin: 1em;
-    height: 100vh;
-    font-family: avenir;
+    margin: 1em 8em;
+    font-family: 'Open Sans', sans-serif;;
     color: black;
+}
+
+#boxDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#secondRow {
+    display: flex;
+    flex-direction: row;
 }
 
 .box {
     background-color: darkgrey;
-    height: 175px;
     margin: 1em;
     float: left;
     text-align: center;
 }
 
 .short {
-    width: 25rem;
+    width: 20rem;
+    height: 20rem
 }
 
 .long {
-    width: 35rem;
+    width: 45rem;
+    height: 43.05rem;
 }
 
 .box p {
     position: relative;
     margin: 0 auto;
-    top: 40%;
     font-size: 1.5em;
-    width: 50%;
     color: white;
+    padding-top: 35%;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
 }
 
-.box:hover {
-    opacity: .75;
+.box::after {
 }
 
 #projects h2 {
     font-size: 4em;
-    font-family: avenir;
+    font-family: 'Open Sans', sans-serif;;
     padding: .75em;
     color: #000;
 }
@@ -141,30 +161,28 @@ div.foo {
     background-image: url(http://1.bp.blogspot.com/-jiGD-i2wfKA/TZTz8XeW84I/AAAAAAAAAl0/R4Ah3wXFbZ8/s1600/tumblr_lildjsl06D1qdkwieo1_500_large.jpg);
     background-size: cover;
     background-color: darkgrey;
+
 }
 
-#tweet {
-    background-image: url(http://www.publicdomainpictures.net/pictures/170000/velka/united-states-of-america-flag-14629034749fa.jpg);
+#erel {
+    background-image: url(https://cdn.yoast.com/app/uploads/2016/07/Email_marketing_FI.png);
+    background-size: cover;
+    background-color: darkgrey;
+
+}
+
+
+#pa {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsjcx8Wpvks64wrdUcZpqumHxSc48cBWn4RhXHQN_Hdk9QqDU);
     background-size: cover;
     background-color: darkgrey;
 }
 
-#store {
-    background-image: url(https://www.peepso.com/wp-content/uploads/2015/10/code.jpg);
+#tennis {
+    background-image: url(https://i2.wp.com/pakobserver.net/wp-content/uploads/2017/12/Tennis.jpg?resize=696%2C463&ssl=1);
     background-size: cover;
     background-color: darkgrey;
-}
 
-#burger {
-    background-image: url(http://aht.seriouseats.com/images/20110622-pennys-diner-burger-closeup.jpg);
-    background-size: cover;
-    background-color: darkgrey;
-}
-
-#flash {
-    background-image: url(https://static.theworks.co.uk/images/5014108161995_Z.jpg);
-    background-size: cover;
-    background-color: darkgrey;
 }
 
 #contact,
@@ -185,7 +203,7 @@ div.foo {
 
 #contact a,
 p {
-    font-family: avenir;
+    font-family: 'Open Sans', sans-serif;;
 }
 
 #contact a,
@@ -247,7 +265,7 @@ p {
     #smallScreen {
         display: inline-block;
         background-color: rgb(98, 203, 213);
-        font-family: avenir;
+        font-family: 'Open Sans', sans-serif;;
         color: #fff;
         margin-top: 100px;
         margin-bottom: 0;
