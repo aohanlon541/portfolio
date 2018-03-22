@@ -67,10 +67,8 @@ div.foo {
     font-size: 2em;
 }
 
-#aboutMe {
-    background-color: rgb(253, 239, 238);
-    margin: 0 5em;
-    padding: 100px;
+#about {
+    margin: 5em 15em;
 }
 
 #aboutMeText {
@@ -79,17 +77,17 @@ div.foo {
     font-family: 'Open Sans', sans-serif;;
 }
 
-#aboutMeText h2 {
-    font-size: 9em
+#about h2 {
+    font-size: 7em
 }
 
-#aboutMeText p {
+#about p {
     font-size: 1.25em;
     padding-bottom: .5em;
     line-height: 1.5em;
 }
 
-#aboutMeText h3 {
+#about h3 {
     font-size: 1.5em;
     padding: .5em;
     font-weight: bold;
@@ -101,15 +99,15 @@ div.foo {
 }
 
 #projects {
-    padding: 1em;
-    margin: 1em 8em;
     font-family: 'Open Sans', sans-serif;;
     color: black;
 }
 
 #boxDiv {
+    margin: 2.5rem 5rem ;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
@@ -120,19 +118,19 @@ div.foo {
 
 .box {
     background-color: darkgrey;
-    margin: 1em;
+    margin: 1rem;
     float: left;
     text-align: center;
 }
 
 .short {
-    width: 20rem;
-    height: 20rem
+    width: 10rem;
+    height: 10rem
 }
 
 .long {
-    width: 45rem;
-    height: 43.05rem;
+    width: 25rem;
+    height: 23.05rem;
 }
 
 .box p {
@@ -140,7 +138,7 @@ div.foo {
     margin: 0 auto;
     font-size: 1.5em;
     color: white;
-    padding-top: 35%;
+    padding-top: 32%;
     font-weight: 800;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -151,10 +149,14 @@ div.foo {
 }
 
 #projects h2 {
-    font-size: 4em;
+    font-size: 3rem;
     font-family: 'Open Sans', sans-serif;;
-    padding: .75em;
-    color: #000;
+    color: #fff;
+    background-image: url(https://static1.squarespace.com/static/53b4d49de4b00894c69c7a0c/t/53f554c2e4b09e4c2a568f5b/1408586946917/?format=500w);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 1rem;
+    
 }
 
 #travelBuddy {
@@ -182,24 +184,42 @@ div.foo {
     background-image: url(https://i2.wp.com/pakobserver.net/wp-content/uploads/2017/12/Tennis.jpg?resize=696%2C463&ssl=1);
     background-size: cover;
     background-color: darkgrey;
+}
 
+#interview {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eu1eY0UJe43EXjeZoBNZB6zXyK7BTHoo_SxEGFxuVSvEMbXlkQ);
+    background-size: cover;
+    background-color: darkgrey;
+}
+
+#estc {
+    background-image: url(https://media3.s-nbcnews.com/i/MSNBC/Components/Video/201803/tdy_news_or_tennis_balls_180321_1920x1080.jpg);
+    background-size: cover;
+    background-color: darkgrey;
+}
+
+#car {
+    background-image: url(https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/legacy/nameplate/cars/18_mst_segment_landing_32.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg);
+    background-size: cover;
+    background-color: darkgrey; 
+}
+#contact {
+    background-color: rgb(95,75,139)
 }
 
 #contact,
 #smallScreen {
     height: 100vh;
     padding: 100px;
-    margin-bottom: 50px;
+    padding-top: 200px;
 }
 
 #contact h2 {
     font-family: 'Prata', serif;
     font-size: 7.5em;
+    color: #fff;
 }
 
-#smallScreen h2 {
-    font-size: 5em;
-}
 
 #contact a,
 p {
@@ -227,14 +247,30 @@ p {
     font-size: 2em;
 }
 
+@media screen and (max-width: 1000px) {
+    #boxDiv {
+        flex-direction: column;
+    }
+    #smallBoxDiv  {
+        height: 200px;
+        padding-left: 25px;
+    }
+}
+
 @media (max-width: 900px) {
+    #aLetter, #oLetter {
+        font-size: 15em;
+    }
+    #aLetter {
+        position: relative;
+    }
+    #headerName {
+        top: 15em;
+    }
     #projects,
     #contact {
         padding-top: 200px;
     }
-}
-
-@media (min-width: 900px) {
     #innerContactBox {
         padding-top: 100px;
     }
@@ -246,8 +282,15 @@ p {
         padding-top: 300px;
     }
 }
-
-@media (max-width: 700px) {
+@media screen and (max-width: 701px) {
+    #intro {
+        display: block;
+    }
+    #smallScreen {
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
     #projects {
         padding-top: 350px;
         text-align: center;
@@ -277,7 +320,7 @@ p {
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     h2 {
         font-size: 7em;
     }
