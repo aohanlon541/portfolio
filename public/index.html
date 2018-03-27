@@ -9,7 +9,14 @@
     <link rel="icon" type="image/png" href="https://s-media-cache-ak0.pinimg.com/originals/9b/b3/a6/9bb3a6cd01240c2cb460a481b58464a7.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116505718-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-116505718-1');
+    </script>
 </head>
 
 <body style="height:2000px" id="body">
@@ -63,7 +70,7 @@
             <h2><em>My Experiences & Apps</em></h2>
             <div id="boxDiv">
                     <div>
-                        <a data-toggle="modal" data-target="#exampleModal">
+                        <a href="#decisionlinks">
                             <div class="long box" id="car">
                                 <p>DecisionLinks 
                                 <br>Web Developer
@@ -72,9 +79,26 @@
                             </div>
                         </a>
                     </div>
+                    <div id="decisionlinks" class="overlay">
+                        <div class="popup">
+                            <h3>Decision Links</h3>
+                            <hr>
+                            <a class="close" href="#!">&times;</a>
+                            <div class="content">
+                                <p>My contract was to develop and redesign web pages for a stronger UI/UX experience with modern design elements. During my contract, I also helped redesign the company website.</p>
+                                <br>
+                                <p>Stack: HTML, CSS, JavaScript</p>
+                                <br>
+                                <img src="/img/before.png" class="example" width="400px">
+                                <br>
+                                <img src="/img/mydeal.png" class="example" width="400px">
+                                <img src="/img/mydeal-1.png" class="example" width="400px">
+                            </div>
+                        </div>
+                    </div>
                 <div id="smallBoxDiv">
                     <div>
-                        <a href="https://austin.dressforsuccess.org/news/" target="_blank">
+                        <a href="https://dfsaustin.wordpress.com/" target="_blank">
                             <div class="short box" id="interview">
                                 <p>Dress for Success</p>
                             </div>
@@ -146,8 +170,8 @@
 
 </body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/skrollr.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/skrollr.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
