@@ -6,8 +6,9 @@ html, body {
     max-width: 100%;
     max-height: 100%;
     overflow-x: hidden;
-}
+    font-family: 'Open Sans', sans-serif;;
 
+}
 
 .foo,
 #smallScreen {
@@ -33,7 +34,7 @@ div.foo {
 
 #oLetter {
     position: absolute;
-    top: .5em;
+    top: .4em;
     left: 1.1em;
     font-size: 30em;
     font-family: 'Prata', serif;
@@ -205,7 +206,8 @@ div.foo {
     background-color: darkgrey; 
 }
 #contact {
-    background-color: rgb(95,75,139)
+    background-color: rgb(95,75,139);
+
 }
 
 #contact,
@@ -222,8 +224,7 @@ div.foo {
 }
 
 
-#contact a,
-p {
+#contact a {
     font-family: 'Open Sans', sans-serif;;
 }
 
@@ -244,8 +245,13 @@ p {
     display: none;
 }
 
-#contact p {
-    font-size: 2em;
+.contactInfo {
+    vertical-align: top;
+}
+
+.icon {
+    width: 50px;
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 1000px) {
@@ -299,10 +305,6 @@ p {
     #contact {
         font-size: 1em;
     }
-    .box {
-        width: 100%;
-    }
-    #contact,
     #intro {
         display: none;
     }
@@ -318,6 +320,9 @@ p {
         display: inline-block;
         text-align: center;
         width: 100%
+    }
+    #contact a {
+        margin-left: 50px
     }
 }
 
@@ -362,7 +367,7 @@ p {
 	padding: 20px;
 	background: #fff;
 	border: 1px solid #666;
-	width: 70%;
+	width: 50%;
 	box-shadow: 0 0 50px rgba(0,0,0,0.5);
 	position: relative;
 }
@@ -393,6 +398,3 @@ p {
       opacity: 1;
     }
   
-  .content {
-    overflow: auto;
-  }

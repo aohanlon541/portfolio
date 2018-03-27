@@ -9,6 +9,11 @@
     <link rel="icon" type="image/png" href="https://s-media-cache-ak0.pinimg.com/originals/9b/b3/a6/9bb3a6cd01240c2cb460a481b58464a7.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116505718-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -89,31 +94,60 @@
                                 <br>
                                 <p>Stack: HTML, CSS, JavaScript</p>
                                 <br>
-                                <img src="/img/before.png" class="example" width="400px">
-                                <br>
-                                <img src="/img/mydeal.png" class="example" width="400px">
-                                <img src="/img/mydeal-1.png" class="example" width="400px">
+                                <p>Before</p>
+                                <img src="/img/before.png" class="example" width="300px">
+                                <p>After</p>
+                                <img src="/img/mydeal.png" class="example" width="300px">
+                                <img src="/img/mydeal-1.png" class="example" width="300px">
                             </div>
                         </div>
                     </div>
                 <div id="smallBoxDiv">
                     <div>
-                        <a href="https://dfsaustin.wordpress.com/" target="_blank">
+                        <a href="#dfs">
                             <div class="short box" id="interview">
                                 <p>Dress for Success</p>
                             </div>
                         </a>
                     </div>
+                    <div id="dfs" class="overlay">
+                        <div class="popup">
+                            <h3>Dress for Success</h3>
+                            <hr>
+                            <a class="close" href="#!">&times;</a>
+                            <div class="content">
+                                <p>I am volunteering at the Austin Dress for Success by redesigning their blog to help with improving their community outreach. The updated blog isn't published yet - check out the old version below.</p>
+                                <br>
+                                <p><a href="https://dfsaustin.wordpress.com/" target="_blank">Link</a></p>
+                            </div>
+                        </div>
+                    </div>
                     <div>
-                        <a href="" target="_blank">
+                        <a href="#es">
                             <div class="short box" id="estc">
                                 <p>ESTC</p>
                             </div>
                         </a>
                     </div>
+                    <div id="es" class="overlay">
+                        <div class="popup">
+                            <h3>ESTC</h3>
+                            <hr>
+                            <a class="close" href="#!">&times;</a>
+                            <div class="content">
+                                <p>I do freelance marketing work for Eugene Swim and Tennis Club out of Eugene, Oregon. I create slides advertising programming, updates, and other club news. I create marketing collateral and make updates to their Wordpress site.</p>
+                                <br>
+                                <p>
+                                <br>
+                                <img src="/img/vote.png" width="300px">
+                                <img src="/img/yoga.png" width="300px">
+                                <img src="/img/save.png" width="300px">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                     <div>
-                        <a data-toggle="modal" data-target="#exampleModal">
+                        <a href="#paPop">
                             <div class="long box" id="pa">
                                 <p>Precision Autonomy
                                 <br>Software Developer
@@ -121,33 +155,82 @@
                             </div>
                         </a>
                     </div>
+                    <div id="paPop" class="overlay">
+                        <div class="popup">
+                            <h3>Precision Autonomy</h3>
+                            <hr>
+                            <a class="close" href="#!">&times;</a>
+                            <div class="content">
+                                <p>Developed and maintained functionality on MEAN stack app. Developed Pug, Express, MVC app for internal admin tasks. Participated in agile development process with mature feature acceptance, code review, and daily stand up with weekly team retrospective. Integrated third-party SDKs and APIs, including Swagger and Braintree.</p>
+                                <br>
+                                <p>Stack: HTML, CSS/Bootstrap, AngularJS, Node/Express, MongoDB</p>
+                                <br>
+                                <p><a href="https://www.precision-autonomy.com/" target="_blank">Website</a></p>
+                            </div>
+                        </div>
+                    </div>
                 <div id="smallBoxDiv">
                     <div>
-                        <a href="https://github.com/aohanlon541/travelbuddy/" target="_blank">
+                        <a href="#buddy">
                             <div class="short box" id="travelBuddy">
                                 <p>Travel Buddy</p>
                             </div>
                         </a>
                     </div>
+                    <div id="buddy" class="overlay">
+                        <div class="popup">
+                            <h3>Travel Buddy</h3>
+                            <hr>
+                            <a class="close" href="#!">&times;</a>
+                            <div class="content">
+                                <p>This full-stack application implements friend matching based on the user's responses to a ten question survey. The user responds to questions with values from 1 (Strongly Disagree) to 5 (Strongly Agree) around the theme of traveling. When the survey is submitted, the sums of their survey answers are compared against other users and returns the most alike user to travel with.</p>
+                                <br>
+                                <p><a href="https://travelbuddy-ao.herokuapp.com/" target="_blank">Repository</a> | <a href="https://travelbuddy-ao.herokuapp.com/" target="_blank">App</a></p>
+                            </div>
+                        </div>
+                    </div>
                     <div>
-                        <a href="https://github.com/aohanlon541/matchmkr/" target="_blank">
+                        <a href="#mkr">
                             <div class="short box" id="tennis">
                                 <p>WIP: Match Mkr</p>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div>
-                <a href="http://www.erelevancecorp.com/" target="_blank">
-                    <div class="long box" id="erel">
-                        <p>eRelevance
-                            <br>Marketing Associate
-                            <br>June 2016 - August 2017</p>
+                    <div id="mkr" class="overlay">
+                        <div class="popup">
+                            <h3>Match Mkr</h3>
+                            <hr>
+                            <a class="close" href="#!">&times;</a>
+                            <div class="content">
+                                <p>Tennis match making web application based on skill level and schedule openings</p>
+                                <p><a href="https://github.com/aohanlon541/matchmkr/" target="_blank">Repository</p>
+                            </div>
+                        </div>
                     </div>
-                </a>
                 </div>
                 <div>
-                <a href="http://www.linkedin.com/" target="_blank">
+                    <a href="#e">
+                        <div class="long box" id="erel">
+                            <p>eRelevance
+                                <br>Marketing Associate
+                                <br>June 2016 - August 2017</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="e" class="overlay">
+                        <div class="popup">
+                            <h3>eRelevance</h3>
+                            <hr>
+                            <a class="close" href="#!">&times;</a>
+                            <div class="content">
+                                <p>Developed creative content for omni-channel marketing campaigns. Authored marketing copy and developed emails and landing pages using HTML/CSS. Carried on average of 90 clients and create 275 campaigns per quarter. Interacted with clients for strategy, design and branding.</p>
+                                <br>
+                                <p><a href="http://www.erelevancecorp.com/" target="_blank">Website</p>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                <a href="http://www.linkedin.com/in/allisonohanlon" target="_blank">
                     <div class="short box" style="background-color: white; color: black;">
                         <p>>>
                         <br>See more</p>
@@ -161,22 +244,20 @@
 
     <div id="contact">
             <h2>Connect with me</h2>
-            <a href="mailto:allison.t.ohanlon@gmail.com "><img src="img/email.png" width="50px"> allison.t.ohanlon@gmail.com </a>
+            <a href="mailto:allison.t.ohanlon@gmail.com ">
+                <img src="img/email.png" class="icon" width="50px"> 
+                <span class="contactInfo">allison.t.ohanlon@gmail.com</span> 
+            </a>
             <br>
-            <a href="https://github.com/aohanlon541"><img src="img/github.png" width="50px"> aohanlon541</a>
+            <a href="https://github.com/aohanlon541">
+                <img src="img/github.png" class="icon" width="50px">
+                <span class="contactInfo">aohanlon541</span>
+            </a>
             <br>
-            <a href="https://www.linkedin.com/in/allisonohanlon/"><img src="img/linkedin.png" width="50px"> /in/allisonohanlon/</a>
+            <a href="https://www.linkedin.com/in/allisonohanlon/">
+                <img src="img/linkedin.png" class="icon" width="50px">
+                <span class="contactInfo"> /in/allisonohanlon/</span>
+            </a>
     </div>
-
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/skrollr.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-
-
-
-
-
 </html>
